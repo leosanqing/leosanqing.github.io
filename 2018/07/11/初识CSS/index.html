@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "c87537f7"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="CSS,JavaWeb,前端," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客GitHub. 思维导图 CSS简介CSS （Cascading Style Sheets）是层叠样式表用来定义网页的显示效果。可以解决html代码对样式定义的重复，提高了后期样式代码的可维护性，并增强了网页的显示效果功能。简单一句话：CSS将网页内容和显示样式进行分离，提高了显示功能。层叠：是指类似于刷油漆，一层一层嵌套">
+<meta name="keywords" content="CSS,JavaWeb,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识CSS">
+<meta property="og:url" content="http://yoursite.com/2018/07/11/初识CSS/index.html">
+<meta property="og:site_name" content="别惹猪儿虫">
+<meta property="og:description" content="欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客GitHub. 思维导图 CSS简介CSS （Cascading Style Sheets）是层叠样式表用来定义网页的显示效果。可以解决html代码对样式定义的重复，提高了后期样式代码的可维护性，并增强了网页的显示效果功能。简单一句话：CSS将网页内容和显示样式进行分离，提高了显示功能。层叠：是指类似于刷油漆，一层一层嵌套">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/07/11/初识CSS/CSS.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/07/11/初识CSS/test.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/07/11/初识CSS/css的盒子模型.jpg">
+<meta property="og:updated_time" content="2018-07-11T07:58:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="初识CSS">
+<meta name="twitter:description" content="欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客GitHub. 思维导图 CSS简介CSS （Cascading Style Sheets）是层叠样式表用来定义网页的显示效果。可以解决html代码对样式定义的重复，提高了后期样式代码的可维护性，并增强了网页的显示效果功能。简单一句话：CSS将网页内容和显示样式进行分离，提高了显示功能。层叠：是指类似于刷油漆，一层一层嵌套">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/11/初识CSS/CSS.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/07/11/初识CSS/"/>
+
+
+
+
+
+  <title>初识CSS | 别惹猪儿虫</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/leosanqing" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">别惹猪儿虫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/11/初识CSS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stormleo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/b.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="别惹猪儿虫">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">初识CSS</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-11T15:55:41+08:00">
+                2018-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/11/初识CSS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/11/初识CSS/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/07/11/初识CSS/" class="leancloud_visitors" data-flag-title="初识CSS">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客<a href="https://github.com/leosanqing" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img src="/2018/07/11/初识CSS/CSS.jpg" alt="CSS思维导图"></p>
+<h2 id="CSS简介"><a href="#CSS简介" class="headerlink" title="CSS简介"></a>CSS简介</h2><p>CSS （Cascading Style Sheets）是层叠样式表用来定义网页的显示效果。可以解决html代码对样式定义的重复，提高了后期样式代码的可维护性，并增强了网页的显示效果功能。简单一句话：CSS将网页内容和显示样式进行分离，提高了显示功能。<br><strong>层叠：</strong>是指类似于刷油漆，一层一层嵌套<br><strong>样式：</strong>指有很多属性值<br><strong>好处：</strong>实现网页内容和显示样式分离，便于维护</p>
+<h2 id="CSS用处（和HTML结合方式-4种）："><a href="#CSS用处（和HTML结合方式-4种）：" class="headerlink" title="CSS用处（和HTML结合方式 4种）："></a>CSS用处（和HTML结合方式 4种）：</h2><h3 id="在标签里面直接添加："><a href="#在标签里面直接添加：" class="headerlink" title="在标签里面直接添加："></a>在标签里面直接添加：</h3><p>直接在元素标签里添加，<br>好处：简单明了<br>缺点：不易维护，且需要每个添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;TestCSS&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div style=&quot;background-color:red ;color: green;&quot;&gt;</span><br><span class="line">		测试CSS</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="在头标签中添加"><a href="#在头标签中添加" class="headerlink" title="在头标签中添加"></a>在头标签中添加</h3><p>在 <strong>head</strong>标签中添加CSS样式,在<strong>head</strong>标签中添加一个<strong>style</strong>标签，里面存放需要设置的CSS样式，不同的需要用<code>{}</code>隔开，且每个属性结束后都需要使用<code>;</code>隔开<br>缺点：不易维护，需要修改HTML文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;TestCSS2&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;</span><br><span class="line">				background-color: red;</span><br><span class="line">				color: gray;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		测试CSS 第二种方法</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="使用-import引入外部CSS文件"><a href="#使用-import引入外部CSS文件" class="headerlink" title="使用@import引入外部CSS文件"></a>使用<code>@import</code>引入外部CSS文件</h3><p>我们可以调用外部写好的CSS文件，而不用我们在HTML文件中自己添加相关样式<br>优点：便于维护，可以导入别人的CSS文件<br>缺点：有些浏览器不支持</p>
+<p>首先我们在网页的同一目录下创建一个CSS文件（也可以不在同一目录下，我是因为写路径方便）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	background-color: red;</span><br><span class="line">	color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>接下来我们在网页中引入这个文件，格式为<code>@import url(你的路径.css)</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;TestCSS&lt;/title&gt;</span><br><span class="line"></span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		@import url(div.css)</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div&gt;测试CSS和HTML结合的第三种方法&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="使用link引入外部文件（推荐，使用最多）"><a href="#使用link引入外部文件（推荐，使用最多）" class="headerlink" title="使用link引入外部文件（推荐，使用最多）"></a>使用link引入外部文件（推荐，使用最多）</h3><p>和上面的import方法类似，不过我们使用<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;div.css&quot;/&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;TestCSS4&lt;/title&gt;</span><br><span class="line">	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;div.css&quot;/&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div&gt;测试CSS和html结合的第四种方式&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="选择器（3种）"><a href="#选择器（3种）" class="headerlink" title="选择器（3种）"></a>选择器（3种）</h2><h3 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h3><p>之前我们看的就是使用标签选择器，我们介绍<strong>CSS</strong>和<strong>HTML</strong>结合方式中就是使用这种方法，他是把标签名写在前面，然后设置相应标签的属性值，就不举例了，看前面的代码即可</p>
+<h3 id="class选择器"><a href="#class选择器" class="headerlink" title="class选择器"></a>class选择器</h3><p>html中每个标签都有一个class属性值，我们根据这个属性值的名称来进行相应的操作<br>这个基本的语句是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[标签名].[class名]&#123;&#125;</span><br><span class="line">比如：</span><br><span class="line">div.test&#123;</span><br><span class="line">	background-color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我们需要在<code>&lt;body&gt;</code> 标签中添加相应的class名 <code>&lt;div class=&quot;test&quot;&gt;</code></p>
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><p>和id类似，只不过我们这次不使用<code>.</code>而使用<code>#</code>，用法和上面类似，在<code>&lt;body&gt;</code>中添加<code>&lt;div id=&quot;test&quot;&gt;sdfas&lt;/div&gt;</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[标签名]#[class名]&#123;&#125;</span><br><span class="line">比如：</span><br><span class="line">div#test&#123;</span><br><span class="line">	background-color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="选择器的优先级"><a href="#选择器的优先级" class="headerlink" title="选择器的优先级"></a>选择器的优先级</h3><p>id&gt;class&gt;标签，即当一个标签中都符合上面的三种选择器，则优先显示优先级高的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;测试优先级&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		.haha&#123;</span><br><span class="line">			background-color: red;</span><br><span class="line">		&#125;</span><br><span class="line">		#haha&#123;</span><br><span class="line">			background-color: yellow;</span><br><span class="line">		&#125;</span><br><span class="line">		p &#123;</span><br><span class="line">			background-color: blue;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;p id=&quot;haha&quot; class=&quot;haha&quot;&gt;123&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><img src="/2018/07/11/初识CSS/test.jpg" alt="test"></p>
+<h2 id="CSS的盒子模型"><a href="#CSS的盒子模型" class="headerlink" title="CSS的盒子模型"></a>CSS的盒子模型</h2><p>有三个属性：边框（border）、填充|内边距（padding）、外边距（margin）</p>
+<p><img src="/2018/07/11/初识CSS/css的盒子模型.jpg" alt="盒子模型"></p>
+<h3 id="边框（border）"><a href="#边框（border）" class="headerlink" title="边框（border）"></a>边框（border）</h3><p>盒子的边框的各种配置，比如颜色，粗细，虚实</p>
+<h3 id="填充-padding"><a href="#填充-padding" class="headerlink" title="填充(padding)"></a>填充(padding)</h3><p>盒子内部的文字或者其他信息到盒子边框的距离</p>
+<h3 id="外边距-margin"><a href="#外边距-margin" class="headerlink" title="外边距(margin)"></a>外边距(margin)</h3><p>盒子与其他事物的间距</p>
+<h3 id="demo"><a href="#demo" class="headerlink" title="demo"></a>demo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;测试盒子模型&lt;/title&gt;</span><br><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line"></span><br><span class="line">		div&#123;</span><br><span class="line">			border: 20px solid red;</span><br><span class="line">			height: 100px;</span><br><span class="line">			width: 200px;</span><br><span class="line">			padding: 20px;</span><br><span class="line">			margin: 10px;</span><br><span class="line">		&#125;</span><br><span class="line">		#test1&#123;</span><br><span class="line">			border: 20px solid blue;</span><br><span class="line">			height: 100px;</span><br><span class="line">			width: 200px;</span><br><span class="line">			padding: 20px;</span><br><span class="line">			margin: 10px;</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id=&quot;test1&quot;&gt;4564444444444&lt;/div&gt;</span><br><span class="line">&lt;div&gt;5+5+65+5+56&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+
+    
+    
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #FF4500;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      </div>
+    
+
+
+    
+      <div>
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span><a href="/2018/07/11/初识CSS/">初识CSS</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 stormleo 的个人博客">stormleo</a></p>
+  <p><span>发布时间:</span>2018年07月11日 - 15:07</p>
+  <p><span>最后更新:</span>2018年07月11日 - 15:07</p>
+  <p><span>原始链接:</span><a href="/2018/07/11/初识CSS/" title="初识CSS">http://yoursite.com/2018/07/11/初识CSS/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/07/11/初识CSS/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+  clipboard.on('success', $(function(){
+    $(".fa-clipboard").click(function(){
+    swal({   
+      title: "",   
+      text: '复制成功',   
+      html: false,
+      timer: 500,   
+      showConfirmButton: false
+      });
+    });
+    }));  
+</script>
+
+      </div>
+    
+
+    
+     
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/qrcode.jpg" alt="stormleo wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/TIM1.png" alt="stormleo 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/TIM2.png" alt="stormleo 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+          
+            <a href="/tags/JavaWeb/" rel="tag"><i class="fa fa-tag"></i> JavaWeb</a>
+          
+            <a href="/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/07/如何使用hexo搭建炫酷的博客/" rel="next" title="如何使用hexo搭建炫酷的博客">
+                <i class="fa fa-chevron-left"></i> 如何使用hexo搭建炫酷的博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/18/JS-基础/" rel="prev" title="JS-基础">
+                JS-基础 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/b.jpg"
+                alt="stormleo" />
+            
+              <p class="site-author-name" itemprop="name">stormleo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leosanqing" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_35583772" target="_blank" title="csdn">
+                      
+                        <i class="fa fa-fw fa-globe"></i>csdn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/profile.php?id=100025524426083" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思维导图"><span class="nav-number">1.</span> <span class="nav-text">思维导图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS简介"><span class="nav-number">2.</span> <span class="nav-text">CSS简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS用处（和HTML结合方式-4种）："><span class="nav-number">3.</span> <span class="nav-text">CSS用处（和HTML结合方式 4种）：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在标签里面直接添加："><span class="nav-number">3.1.</span> <span class="nav-text">在标签里面直接添加：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在头标签中添加"><span class="nav-number">3.2.</span> <span class="nav-text">在头标签中添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-import引入外部CSS文件"><span class="nav-number">3.3.</span> <span class="nav-text">使用@import引入外部CSS文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用link引入外部文件（推荐，使用最多）"><span class="nav-number">3.4.</span> <span class="nav-text">使用link引入外部文件（推荐，使用最多）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器（3种）"><span class="nav-number">4.</span> <span class="nav-text">选择器（3种）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标签选择器"><span class="nav-number">4.1.</span> <span class="nav-text">标签选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class选择器"><span class="nav-number">4.2.</span> <span class="nav-text">class选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id选择器"><span class="nav-number">4.3.</span> <span class="nav-text">id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择器的优先级"><span class="nav-number">4.4.</span> <span class="nav-text">选择器的优先级</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS的盒子模型"><span class="nav-number">5.</span> <span class="nav-text">CSS的盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#边框（border）"><span class="nav-number">5.1.</span> <span class="nav-text">边框（border）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#填充-padding"><span class="nav-number">5.2.</span> <span class="nav-text">填充(padding)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外边距-margin"><span class="nav-number">5.3.</span> <span class="nav-text">外边距(margin)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo"><span class="nav-number">5.4.</span> <span class="nav-text">demo</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stormleo</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
+  
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'mXsYiINGPH2aGEBMUS6WdwDN-gzGzoHsz',
+        appKey: 'JWINd83dGT3LMvoebnJgLUeU',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("mXsYiINGPH2aGEBMUS6WdwDN-gzGzoHsz", "JWINd83dGT3LMvoebnJgLUeU");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>

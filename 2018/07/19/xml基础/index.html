@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "c87537f7"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JavaWeb前端,xml基础," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客GitHub.如果需要相关资料，就可以关注我的公众号，或者点击右边的消息图标，发送消息给我我公众号会定期发送一些思想型文章，能够给大家带来些便利；不打算讲解技术方面，因为技术不到家如果有其他疑问，请私聊我或者添加我的微信，再次谢谢大家 这篇文章会讲什么： xml-简介名词解释xml（extensible Markup La">
+<meta name="keywords" content="JavaWeb前端,xml基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="xml基础">
+<meta property="og:url" content="http://yoursite.com/2018/07/19/xml基础/index.html">
+<meta property="og:site_name" content="别惹猪儿虫">
+<meta property="og:description" content="欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客GitHub.如果需要相关资料，就可以关注我的公众号，或者点击右边的消息图标，发送消息给我我公众号会定期发送一些思想型文章，能够给大家带来些便利；不打算讲解技术方面，因为技术不到家如果有其他疑问，请私聊我或者添加我的微信，再次谢谢大家 这篇文章会讲什么： xml-简介名词解释xml（extensible Markup La">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/07/19/xml基础/xml基础.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/07/19/xml基础/xml的应用一.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/07/19/xml基础/apply2.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/07/19/xml基础/apply3.jpg">
+<meta property="og:updated_time" content="2018-07-25T02:55:13.070Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="xml基础">
+<meta name="twitter:description" content="欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客GitHub.如果需要相关资料，就可以关注我的公众号，或者点击右边的消息图标，发送消息给我我公众号会定期发送一些思想型文章，能够给大家带来些便利；不打算讲解技术方面，因为技术不到家如果有其他疑问，请私聊我或者添加我的微信，再次谢谢大家 这篇文章会讲什么： xml-简介名词解释xml（extensible Markup La">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/19/xml基础/xml基础.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/07/19/xml基础/"/>
+
+
+
+
+
+  <title>xml基础 | 别惹猪儿虫</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/leosanqing" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">别惹猪儿虫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/xml基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stormleo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/b.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="别惹猪儿虫">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">xml基础</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-19T16:15:31+08:00">
+                2018-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/19/xml基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/19/xml基础/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/07/19/xml基础/" class="leancloud_visitors" data-flag-title="xml基础">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>欢迎您阅读我的文章，这里记录的我的学习进度分享学习资料 ，你可以查看我的博客<a href="https://github.com/leosanqing" target="_blank" rel="noopener">GitHub</a>.<br>如果需要相关资料，就可以关注我的公众号，或者点击右边的消息图标，发送消息给我<br>我公众号会定期发送一些思想型文章，能够给大家带来些便利；不打算讲解技术方面，因为技术不到家<br>如果有其他疑问，请私聊我或者添加我的微信，再次谢谢大家</p>
+<p>这篇文章会讲什么：<br><img src="/2018/07/19/xml基础/xml基础.jpg" alt="xml基础"></p>
+<h2 id="xml-简介"><a href="#xml-简介" class="headerlink" title="xml-简介"></a>xml-简介</h2><h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>xml（extensible Markup Language）可拓展标记型语言<br><strong>标记型：</strong>使用标签操作，和HTML一样<br><strong>可拓展：</strong>标签可以自己定义，可以写中文标签 &lt;猫&gt;&lt;/猫&gt;,这点区分于HTML，HTML不能自己定义标签，必须使用给定好的标签</p>
+<p>xml 是W3C组织发布的技术，目前有两个版本，1.0,1.1。主要使用1.0，因为1.1并不能兼容1.0的东西</p>
+<h3 id="xml用途"><a href="#xml用途" class="headerlink" title="xml用途"></a>xml用途</h3><h4 id="显示数据"><a href="#显示数据" class="headerlink" title="显示数据"></a>显示数据</h4><p>和HTML一样，xml也可以(但是这不是他的重点)</p>
+<h4 id="存储数据"><a href="#存储数据" class="headerlink" title="存储数据"></a>存储数据</h4><p>这是他的主要功能，可以像数据库一样进行简单的存储数据</p>
+<h2 id="xml-应用"><a href="#xml-应用" class="headerlink" title="xml-应用"></a>xml-应用</h2><h3 id="不同的系统间数据传输"><a href="#不同的系统间数据传输" class="headerlink" title="不同的系统间数据传输"></a>不同的系统间数据传输</h3><p>比如 QQ消息之间的传递<br><img src="/2018/07/19/xml基础/xml的应用一.jpg" alt="xml的应用一.jpg"></p>
+<h3 id="表示生活中有关系的数据"><a href="#表示生活中有关系的数据" class="headerlink" title="表示生活中有关系的数据"></a>表示生活中有关系的数据</h3><p><img src="/2018/07/19/xml基础/apply2.jpg" alt="apply2"><br><img src="/2018/07/19/xml基础/apply3.jpg" alt="apply3"></p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>这个在编程中用的很多，因为我们使用xml配置文件，可以增强代码的可维护性，我们修改一些配置不需要再源代码中进行修改，只需要修改相应的配置文件即可。</p>
+<h2 id="xml-语法"><a href="#xml-语法" class="headerlink" title="xml-语法"></a>xml-语法</h2><h3 id="xml的文档声明"><a href="#xml的文档声明" class="headerlink" title="xml的文档声明"></a>xml的文档声明</h3><p>1.创建一个xml文件，后缀名是<code>.xml</code><br>2.写xml，必须要有文档声明<br>格式：<code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</code><br><strong>必须写在第一行第一列，必须写在第一行第一列，必须写在第一行第一列，！！！！</strong></p>
+<h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3><h4 id="形式（2种）"><a href="#形式（2种）" class="headerlink" title="形式（2种）"></a>形式（2种）</h4><p>1.<code>&lt;tag&gt;This is a tag&lt;/tag&gt;</code><br>2.<code>&lt;tag/&gt;</code></p>
+<h4 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h4><p>1.不能交叉嵌套<br>2.有且仅有一个父节点</p>
+<h4 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h4><p>1.不能以数字、标点符号开头<br>2.不能以xml、XML开头<br>3.不能包含空格<br>4.严格区分大小写</p>
+<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><p>1.可以有多个属性<br>2.要使用 “”包含<br>3.不能重复<br>4.命名规则和元素相同</p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>只有一种<code>&lt;!--这是注释--!&gt;</code></p>
+<h2 id="CDATA区"><a href="#CDATA区" class="headerlink" title="CDATA区"></a>CDATA区</h2><p>character data 的缩写<br><strong>作用：</strong>把标签当做普通文本<br><strong>格式：</strong><code>&lt;![CDATA[内容]]]&gt;</code><br>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;![CDATA[</span><br><span class="line">	&lt;person&gt;人&lt;/person&gt;</span><br><span class="line">]]&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="处理指令"><a href="#处理指令" class="headerlink" title="处理指令"></a>处理指令</h2><p>PI(Processing Instruction)<br><strong>作用：</strong>用来指挥软件如何解析文件<br><strong>常用：</strong><br>1.<code>&lt;?xml version=&quot;1.0&quot; edcoding=&quot;utf-8&quot;?&gt;</code><br>2.<code>xml-stylesheet</code>指令：<br>作用：指示xml文档所使用的CSS样式 XSL<br><code>&lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;some.css&quot;?&gt;</code><br><strong>注意：对中文不起作用</strong></p>
+<h2 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h2><h3 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h3><p>约束xml的书写规范的文档称为约束</p>
+<h3 id="为什么要使用"><a href="#为什么要使用" class="headerlink" title="为什么要使用"></a>为什么要使用</h3><p>xml都是用户自己定义的标签，若出现小的失误，就会造成文件无法解析，出错的情况</p>
+<h3 id="常用的约束技术"><a href="#常用的约束技术" class="headerlink" title="常用的约束技术"></a>常用的约束技术</h3><p>1.xml DTD<br>2.xml Schema</p>
+<h3 id="DTD"><a href="#DTD" class="headerlink" title="DTD"></a>DTD</h3><h4 id="格式-1"><a href="#格式-1" class="headerlink" title="格式"></a>格式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--book.dtd 文件--!&gt;</span><br><span class="line">&lt;! ELEMENT 书架 (书+)&gt;</span><br><span class="line">	&lt;! ELEMENT 书（书名,作者,售价）&gt;</span><br><span class="line">	&lt;! ELEMENT 书名(# PCDATA)&gt;</span><br><span class="line">	&lt;! ELEMENT 作者(# PCDATA)&gt;</span><br><span class="line">	&lt;! ELEMENT 售价(# PCDATA)&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="关联方式"><a href="#关联方式" class="headerlink" title="关联方式"></a>关联方式</h4><h5 id="使用内部-DTD"><a href="#使用内部-DTD" class="headerlink" title="使用内部 DTD"></a>使用内部 DTD</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;! DCOTYPE 书架[上面的代码写进来]&gt;</span><br><span class="line">	&lt;书架&gt;</span><br><span class="line">		&lt;书&gt;</span><br><span class="line">			&lt;书名&gt;西游记&lt;/书名&gt;</span><br><span class="line">			&lt;作者&gt;吴承恩&lt;/作者&gt;</span><br><span class="line">			&lt;售价&gt;100.2&lt;/售价&gt;</span><br><span class="line">		&lt;/书&gt;</span><br><span class="line">	&lt;/书架&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="外部本地引用"><a href="#外部本地引用" class="headerlink" title="外部本地引用"></a>外部本地引用</h5><p><code>&lt;! DOCTPYE 根元素 SYSTEM &quot;DTD路径&quot;&gt;</code><br>exm:<code>&lt;! DOCTPYE 书架 SYSTEM &quot;/book.dtd&quot;&gt;</code></p>
+<h5 id="外部网路引用"><a href="#外部网路引用" class="headerlink" title="外部网路引用"></a>外部网路引用</h5><p><code>&lt;! DOCTPYE 根元素 PUBLIC &quot;DTD文件名&quot; &quot;DTD文档URL&quot;&gt;</code><br>exm:<code>&lt;! DOCTPYE 书架 PUBLIC &quot;/book.dtd&quot; &quot;http://Java.sdfsa/....com&quot;&gt;</code></p>
+<h4 id="DTD-定义元素"><a href="#DTD-定义元素" class="headerlink" title="DTD 定义元素"></a>DTD 定义元素</h4><p><strong>语法：</strong> <code>&lt;! ELEMENT 元素名称 使用规则&gt;</code><br><strong>规则：</strong><br>    （#PCDATA）指元素主题内容只能是普通文本<br>     EMPTY： 元素主体为空 如<br><br>     ANY  ：主体内容为任意类型<br>     (子元素) 元素包含的子元素</p>
+<h4 id="约束的4种形式"><a href="#约束的4种形式" class="headerlink" title="约束的4种形式"></a>约束的4种形式</h4><p> REQUIRED  IMPLIED FIXED value  Ddfaultvalue</p>
+<h4 id="定义引用实体"><a href="#定义引用实体" class="headerlink" title="定义引用实体"></a>定义引用实体</h4><h5 id="概念："><a href="#概念：" class="headerlink" title="概念："></a>概念：</h5><p>在DTD中定义，在XML中使用</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><p><code>&lt;! ENTITY 实体名称 &quot;实体内容&quot;&gt;</code></p>
+<h5 id="引用方式"><a href="#引用方式" class="headerlink" title="引用方式"></a>引用方式</h5><p>exm: DTD中： <code>&lt;! ENTITY copyright &quot;....所有&quot;</code><br>xml中:<code>&amp;copyright;</code></p>
+<h2 id="XML解析方式"><a href="#XML解析方式" class="headerlink" title="XML解析方式"></a>XML解析方式</h2><p>DOM和SAX</p>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别:"></a>区别:</h3><p>DOM把整个文件放入内容，然后解析；SAX采用时间驱动，边读边解析</p>
+<h3 id="DOM优缺点："><a href="#DOM优缺点：" class="headerlink" title="DOM优缺点："></a>DOM优缺点：</h3><p>优点：方便实现增删查改操作<br>缺点：文件过大会造成内存溢出</p>
+<h3 id="SAX优缺点"><a href="#SAX优缺点" class="headerlink" title="SAX优缺点"></a>SAX优缺点</h3><p>优点：不会造成内存溢出<br>缺点：不能实现增删查改功能</p>
+<h2 id="JAXP查询步骤"><a href="#JAXP查询步骤" class="headerlink" title="JAXP查询步骤"></a>JAXP查询步骤</h2><p>1.创建解析工厂<br>2.创建解析器<br>3.解析xml文件为document<br>4.得到所有元素<br>5.返回结合，遍历集合</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package cn.swu.stormleo;</span><br><span class="line"></span><br><span class="line">import javax.xml.parsers.DocumentBuilder;</span><br><span class="line">import javax.xml.parsers.DocumentBuilderFactory;</span><br><span class="line">import javax.xml.parsers.ParserConfigurationException;</span><br><span class="line"></span><br><span class="line">import org.w3c.dom.Document;</span><br><span class="line">import org.w3c.dom.Node;</span><br><span class="line">import org.w3c.dom.NodeList;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 使用JAXP解析xml文件</span><br><span class="line"> * @author Administrator</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public class TestJASXP &#123;</span><br><span class="line">	public static void main(String[] args) throws Exception &#123;</span><br><span class="line">		//创建解析器工厂</span><br><span class="line">		DocumentBuilderFactory builderFactory=DocumentBuilderFactory.newInstance();</span><br><span class="line">		//创建解析器</span><br><span class="line">		DocumentBuilder documentBuilder =builderFactory.newDocumentBuilder();</span><br><span class="line">		//解析xml返回document</span><br><span class="line">		Document document=documentBuilder.parse(&quot;src/person.xml&quot;);</span><br><span class="line">		//得到name元素</span><br><span class="line">		NodeList node= document.getElementsByTagName(&quot;name&quot;);</span><br><span class="line">		//遍历集合</span><br><span class="line">		for(int i=0;i&lt;node.getLength();i++)&#123;</span><br><span class="line">			Node name1=node.item(i);</span><br><span class="line">			String str=name1.getTextContent();</span><br><span class="line">			System.out.println(str);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="JAXP添加在查询到的第一个元素后面"><a href="#JAXP添加在查询到的第一个元素后面" class="headerlink" title="JAXP添加在查询到的第一个元素后面"></a>JAXP添加在查询到的第一个元素后面</h2><p>1.创建解析工厂<br>2.创建解析器<br>3.解析xml文件为document<br>4.得到插入位置的前一个节点<br>5.创建插入标签<br>6.创建文本<br>7.把文本添加到标签中<br>8.把标签插入到相应位置<br>9.回写xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">package cn.swu.stormleo;</span><br><span class="line"></span><br><span class="line">import javax.xml.parsers.DocumentBuilder;</span><br><span class="line">import javax.xml.parsers.DocumentBuilderFactory;</span><br><span class="line">import javax.xml.parsers.ParserConfigurationException;</span><br><span class="line">import javax.xml.transform.Transformer;</span><br><span class="line">import javax.xml.transform.TransformerFactory;</span><br><span class="line">import javax.xml.transform.dom.DOMSource;</span><br><span class="line">import javax.xml.transform.stream.StreamResult;</span><br><span class="line"></span><br><span class="line">import org.w3c.dom.Document;</span><br><span class="line">import org.w3c.dom.Element;</span><br><span class="line">import org.w3c.dom.Node;</span><br><span class="line">import org.w3c.dom.NodeList;</span><br><span class="line">import org.w3c.dom.Text;</span><br><span class="line"></span><br><span class="line">public class insertElement &#123;</span><br><span class="line">	public static void main(String[] args) throws Exception &#123;</span><br><span class="line">		//创建解析器工厂</span><br><span class="line">		DocumentBuilderFactory builderFactory=DocumentBuilderFactory.newInstance();</span><br><span class="line">		//创建解析器</span><br><span class="line">		DocumentBuilder builder=builderFactory.newDocumentBuilder();</span><br><span class="line">		//解析xml文件返回document</span><br><span class="line">		Document document=builder.parse(&quot;src/person.xml&quot;);</span><br><span class="line">		//得到插入位置前的一个节点</span><br><span class="line">		NodeList list=document.getElementsByTagName(&quot;p1&quot;);</span><br><span class="line">		Node node=list.item(0);</span><br><span class="line">		//创建插入标签</span><br><span class="line">		Element element = document.createElement(&quot;gender&quot;);</span><br><span class="line">		//创建插入的文本</span><br><span class="line">		Text text=document.createTextNode(&quot;female&quot;);</span><br><span class="line">		//将文本添加到标签中</span><br><span class="line">		element.appendChild(text);</span><br><span class="line">		//把标签插入到相应位置</span><br><span class="line">		node.appendChild(element);</span><br><span class="line">		//回写xml</span><br><span class="line">		TransformerFactory transformerFactory=TransformerFactory.newInstance();</span><br><span class="line">		Transformer transformer=transformerFactory.newTransformer();</span><br><span class="line">		transformer.transform(new DOMSource(document), new StreamResult(&quot;src/person.xml&quot;));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="JAXP修改"><a href="#JAXP修改" class="headerlink" title="JAXP修改"></a>JAXP修改</h2><p>1.创建解析工厂<br>2.创建解析器<br>3.解析xml文件为document<br>4.得到修改的节点<br>5.修改文本<br>6.回写xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">package cn.swu.stormleo;</span><br><span class="line"></span><br><span class="line">import javax.xml.parsers.DocumentBuilder;</span><br><span class="line">import javax.xml.parsers.DocumentBuilderFactory;</span><br><span class="line">import javax.xml.parsers.ParserConfigurationException;</span><br><span class="line">import javax.xml.transform.Transformer;</span><br><span class="line">import javax.xml.transform.TransformerFactory;</span><br><span class="line">import javax.xml.transform.dom.DOMSource;</span><br><span class="line">import javax.xml.transform.stream.StreamResult;</span><br><span class="line"></span><br><span class="line">import org.w3c.dom.Document;</span><br><span class="line">import org.w3c.dom.Node;</span><br><span class="line">import org.w3c.dom.NodeList;</span><br><span class="line"></span><br><span class="line">public class Modify &#123;</span><br><span class="line">	public static void main(String[] args) throws Exception &#123;</span><br><span class="line">		//创建解析器工厂</span><br><span class="line">		DocumentBuilderFactory documentBuilderFactory=DocumentBuilderFactory.newInstance();</span><br><span class="line">		//创建解析器</span><br><span class="line">		DocumentBuilder documentBuilder=documentBuilderFactory.newDocumentBuilder();</span><br><span class="line">		//解析xml文件返回document</span><br><span class="line">		Document document =documentBuilder.parse(&quot;src/person.xml&quot;);</span><br><span class="line">		NodeList list=document.getElementsByTagName(&quot;gender&quot;);</span><br><span class="line">		Node node=list.item(0);</span><br><span class="line">		node.setTextContent(&quot;MAN&quot;);</span><br><span class="line">		</span><br><span class="line">		TransformerFactory transformerFactory=TransformerFactory.newInstance();</span><br><span class="line">		Transformer transformer=transformerFactory.newTransformer();</span><br><span class="line">		transformer.transform(new DOMSource(document), new StreamResult(&quot;src/person.xml&quot;));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+
+    
+    
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #FF4500;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      </div>
+    
+
+
+    
+      <div>
+        
+      </div>
+    
+
+    
+     
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/qrcode.jpg" alt="stormleo wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/TIM1.png" alt="stormleo 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/TIM2.png" alt="stormleo 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaWeb前端/" rel="tag"><i class="fa fa-tag"></i> JavaWeb前端</a>
+          
+            <a href="/tags/xml基础/" rel="tag"><i class="fa fa-tag"></i> xml基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/18/JS-基础/" rel="next" title="JS-基础">
+                <i class="fa fa-chevron-left"></i> JS-基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/25/test/" rel="prev" title="test">
+                test <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/b.jpg"
+                alt="stormleo" />
+            
+              <p class="site-author-name" itemprop="name">stormleo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/leosanqing" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_35583772" target="_blank" title="csdn">
+                      
+                        <i class="fa fa-fw fa-globe"></i>csdn</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/profile.php?id=100025524426083" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#xml-简介"><span class="nav-number">1.</span> <span class="nav-text">xml-简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#名词解释"><span class="nav-number">1.1.</span> <span class="nav-text">名词解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xml用途"><span class="nav-number">1.2.</span> <span class="nav-text">xml用途</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#显示数据"><span class="nav-number">1.2.1.</span> <span class="nav-text">显示数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#存储数据"><span class="nav-number">1.2.2.</span> <span class="nav-text">存储数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xml-应用"><span class="nav-number">2.</span> <span class="nav-text">xml-应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不同的系统间数据传输"><span class="nav-number">2.1.</span> <span class="nav-text">不同的系统间数据传输</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表示生活中有关系的数据"><span class="nav-number">2.2.</span> <span class="nav-text">表示生活中有关系的数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置文件"><span class="nav-number">2.3.</span> <span class="nav-text">配置文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xml-语法"><span class="nav-number">3.</span> <span class="nav-text">xml-语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#xml的文档声明"><span class="nav-number">3.1.</span> <span class="nav-text">xml的文档声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素"><span class="nav-number">3.2.</span> <span class="nav-text">元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#形式（2种）"><span class="nav-number">3.2.1.</span> <span class="nav-text">形式（2种）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#格式"><span class="nav-number">3.2.2.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命名规则"><span class="nav-number">3.2.3.</span> <span class="nav-text">命名规则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性"><span class="nav-number">3.2.4.</span> <span class="nav-text">属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">3.3.</span> <span class="nav-text">注释</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CDATA区"><span class="nav-number">4.</span> <span class="nav-text">CDATA区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理指令"><span class="nav-number">5.</span> <span class="nav-text">处理指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约束"><span class="nav-number">6.</span> <span class="nav-text">约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#是什么"><span class="nav-number">6.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要使用"><span class="nav-number">6.2.</span> <span class="nav-text">为什么要使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的约束技术"><span class="nav-number">6.3.</span> <span class="nav-text">常用的约束技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DTD"><span class="nav-number">6.4.</span> <span class="nav-text">DTD</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#格式-1"><span class="nav-number">6.4.1.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联方式"><span class="nav-number">6.4.2.</span> <span class="nav-text">关联方式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用内部-DTD"><span class="nav-number">6.4.2.1.</span> <span class="nav-text">使用内部 DTD</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#外部本地引用"><span class="nav-number">6.4.2.2.</span> <span class="nav-text">外部本地引用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#外部网路引用"><span class="nav-number">6.4.2.3.</span> <span class="nav-text">外部网路引用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DTD-定义元素"><span class="nav-number">6.4.3.</span> <span class="nav-text">DTD 定义元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约束的4种形式"><span class="nav-number">6.4.4.</span> <span class="nav-text">约束的4种形式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义引用实体"><span class="nav-number">6.4.5.</span> <span class="nav-text">定义引用实体</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念："><span class="nav-number">6.4.5.1.</span> <span class="nav-text">概念：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#语法"><span class="nav-number">6.4.5.2.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#引用方式"><span class="nav-number">6.4.5.3.</span> <span class="nav-text">引用方式</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML解析方式"><span class="nav-number">7.</span> <span class="nav-text">XML解析方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#区别"><span class="nav-number">7.1.</span> <span class="nav-text">区别:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM优缺点："><span class="nav-number">7.2.</span> <span class="nav-text">DOM优缺点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SAX优缺点"><span class="nav-number">7.3.</span> <span class="nav-text">SAX优缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JAXP查询步骤"><span class="nav-number">8.</span> <span class="nav-text">JAXP查询步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JAXP添加在查询到的第一个元素后面"><span class="nav-number">9.</span> <span class="nav-text">JAXP添加在查询到的第一个元素后面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JAXP修改"><span class="nav-number">10.</span> <span class="nav-text">JAXP修改</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stormleo</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
+  
+</div>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'mXsYiINGPH2aGEBMUS6WdwDN-gzGzoHsz',
+        appKey: 'JWINd83dGT3LMvoebnJgLUeU',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("mXsYiINGPH2aGEBMUS6WdwDN-gzGzoHsz", "JWINd83dGT3LMvoebnJgLUeU");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
